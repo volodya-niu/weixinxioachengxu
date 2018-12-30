@@ -1,0 +1,14 @@
+<!--pages/search/search.wxml-->
+<import src="/pages/movie-single/movie-single.wxml" />
+<view class="tap">
+<icon type="search" color="blue"></icon>
+  <input type="text" placeholder="请输入您要搜索的电影" adjust-position="true" bindinput="search" confirm-type="搜索" value="{{val}}" placeholder-class='aaa'></input>
+  <icon type="cancel" bindtap="del" wx:if="{{val.length}}"></icon>
+</view>
+<view class="main1">
+  <block wx:for="{{list}}" wx:key="{{index}}">
+    <view bindtap="enterDetail" data-id="{{item.id}}">
+      <template is="single" data="{{item}}"/>
+    </view>
+  </block> 
+</view>

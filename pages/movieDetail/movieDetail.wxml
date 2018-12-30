@@ -1,0 +1,20 @@
+<!--pages/movieDetail/movieDetail.wxml-->
+<view class="wrapper">
+  <view class="head">
+    <image class="bg" src="{{detail.images.medium}}"></image>
+    <text class="main-title">{{detail.original_title}}</text>
+    <text class="des">{{detail.countries[0]}}
+      {{detail.pubdate}}
+     </text>
+    <view class="hot">
+      <text class="like">{{detail.ratings_count}}</text>喜欢
+      <text class="comment">{{detail.reviews_count}}</text>评论
+    </view>
+    <image class="cover" src="{{detail.images.medium}}"></image>
+  </view>
+  <view class="main">
+    <view class="descrition">
+      {{detail.summary}}
+    </view>  
+  </view>
+</view>

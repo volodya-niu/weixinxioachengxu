@@ -1,0 +1,16 @@
+<!--pages/movie-list/movie-list.wxml-->
+<import src="/pages/movie-single/movie-single.wxml" />
+<view class="wrapper">
+  <view class="des">
+    <text class="title">{{title}}</text>
+    <view class="more" bindtap="enterMore" data-msg="{{cate}}">
+      更多
+      <image src="/images/icon/arrow-right.png"></image>
+    </view>
+  </view>
+  <view class="wrap">
+    <block wx:for="{{movie}}" wx:key="{{index}}">
+      <view bindtap="enterDetail" data-id="{{item.id}}"><template is="single" data="{{item}}"/></view>
+    </block>
+  </view>
+</view>

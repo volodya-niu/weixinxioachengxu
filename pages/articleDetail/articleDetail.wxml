@@ -1,0 +1,24 @@
+<view class="wrap">
+  <view class="img">
+    <image src="{{article.headImgSrc}}" class="thumb"></image>
+    <image class="play" src="{{url}}" bindtap="playMusic"></image>
+  </view>
+  <view class="main">
+    <view class="top">
+        <image src="{{article.avatar}}"></image>
+        <text class="author">{{article.author}}</text>
+        发表于
+        <text class="time">{{article.dateTime}}</text>
+    </view>
+    <view class="title">
+      <text>{{article.title}}</text>
+    </view>
+    <view class="act">
+      <image class="collection" src="{{collection?'/images/icon/collection-anti.png':'/images/icon/collection.png'}}" bindtap="collection"></image>
+       <image class="share" src="/images/icon/share.png"></image>
+    </view>
+    <view class="content">
+        {{article.detail}}
+    </view>
+  </view>
+</view>

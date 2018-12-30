@@ -1,0 +1,35 @@
+/* pages/index/index.wxss */
+page{
+  width:100%;
+  height:100%;
+  background: #b3d4db;
+}
+.wrap{
+  
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.avator{
+  margin-top:160rpx;
+  width:160rpx;
+  height:160rpx;
+  margin-bottom:100rpx;
+  border-radius: 80rpx;
+}
+.nickName{
+  font-size:16px;
+  color:#000;
+  font-weight:bold;
+  margin-bottom:200rpx;
+}
+.btn{
+  font-size:11px;
+  color:#405f80;
+  width:250rpx;
+  height:80rpx;
+  border:2px solid #405f80;
+  border-radius: 10rpx;
+  text-align:center;
+  line-height: 80rpx;
+}

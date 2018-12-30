@@ -1,0 +1,13 @@
+<!--pages/movies/movies.wxml-->
+<view class="head" bindtap="enterSearch">
+  <icon type="search" color="blue"></icon>
+  请搜索电影
+</view>
+<view>
+  <movie-list cate="in_theaters" title="正在热映">
+  </movie-list>
+  <movie-list cate="top250" title="top_250">
+  </movie-list>
+  <movie-list cate="coming_soon" title="即将上映">
+  </movie-list>
+</view>

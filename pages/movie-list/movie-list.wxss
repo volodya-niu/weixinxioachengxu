@@ -1,0 +1,27 @@
+/* pages/movie-list/movie-list.wxss */
+@import "/pages/movie-single/movie-single.wxss";
+.wrapper{
+  padding-right:30rpx;
+}
+.wrap{
+  display: flex;
+  justify-content: space-between;
+}
+.des{
+  display: flex;
+  justify-content: space-between;
+  height: 90rpx;
+  align-items: center;
+  font-size:10px;
+  color:#666;
+}
+.des image{
+  height: 16rpx;
+  width:8rpx;
+}
+.more{
+  color:blue;
+}
+.more image{
+  margin-left:10rpx;
+}

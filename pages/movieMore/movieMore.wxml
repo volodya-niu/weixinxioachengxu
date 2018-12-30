@@ -1,0 +1,13 @@
+<import src="/pages/movie-single/movie-single.wxml" />
+
+
+<scroll-view class="wrapper" scroll-y="true" lower-threshold="30" bindscrolltolower="fn">
+  <view class="wrap">
+  <block wx:for="{{list}}" wx:key="{{index}}">
+    <view bindtap="enterDetail" data-id="{{item.id}}">
+      <template is="single" data="{{item}}" />
+    </view>
+  </block>
+  </view>
+</scroll-view>
+

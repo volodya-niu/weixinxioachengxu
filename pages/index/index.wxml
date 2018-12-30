@@ -1,0 +1,5 @@
+<view class="wrap">
+  <image src="{{userInfo.avatarUrl}}" class="avator"></image>
+  <text class="nickName">{{userInfo.nickName}}</text>
+  <view class="btn" bindtap="enterArticle">开启休闲之旅</view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "电影时分",
+  "usingComponents": {
+    "movie-list":"/pages/movie-list/movie-list"
+  }
+}

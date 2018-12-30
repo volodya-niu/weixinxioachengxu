@@ -1,0 +1,10 @@
+<template name="single">
+  <view class="main">
+    <image  class="mvimg" src="{{item.images.medium}}"></image>
+    <text class="movie-title">{{item.title}}</text>
+    <view class="movie-bottom">
+      <text>{{item.genres[0]}}</text>
+      <text>{{item.rating.average}}</text>
+    </view>
+  </view>  
+</template>

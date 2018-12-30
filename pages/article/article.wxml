@@ -1,0 +1,45 @@
+<view class="wrap">
+  <swiper class="swiper" indicator-dots="true" indicator-color="rgba(0,0,0,0.9)" indicator-active-color="#fc0" autoplay="true">
+    <swiper-item>
+      <image src="/images/iqiyi.jpg" class="slide-image" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/vr.jpg" class="slide-image" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/wx.jpg" class="slide-image" />
+    </swiper-item>
+  </swiper>
+  <!--轮播结束-->
+  <!--文章列表开始-->
+  <block wx:for="{{list}}" wx:key="{{index}}">
+    <view class="article-list" bindtap="enterDetail" data-id="{{index}}">
+      <view class="article-top">
+        <image src="{{item.avatar}}"></image>
+
+       {{item.date}}
+
+      </view>
+      <view class="article-title">
+        {{item.title}}
+      </view>
+      <image class="article-img" src="{{item.imgSrc}}"></image>
+
+      <view class="des">
+       {{item.content}}
+      </view>
+      <view class="article-bottom">
+        <view class="comment">
+          <image src="/images/tab/yuedu.png"></image>
+          <text>{{item.collection}}</text>
+        </view>
+        <view class="count">
+          <image src="/images/icon/view.png"></image>
+          <text>{{item.reading}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+
+  <!--文章列表结束-->
+</view>
